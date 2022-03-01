@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,8 +30,8 @@
 
       .grid {
         display: inline-grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
 
@@ -58,6 +59,7 @@
         top: calc(100% - 30px);
         left: 14px;
         transform: rotate(-45deg);
+        text-align: end;
       }
       .tab {
         width: 0;
@@ -106,6 +108,38 @@
         background-image: url("images/semla_2.jpg");
       }
 
+      #lopingg {
+        background-image: url("images/lopingg_2.jpg");
+      }
+
+      #yappari {
+        background-image: url("images/yappari_2.jpg");
+      }
+
+      #rassel {
+        background-image: url("images/rassel_2.jpg");
+      }
+
+      #semla {
+        background-image: url("images/semla_2.jpg");
+      }
+
+      #bg {
+        background-image: url("images/bg_2.jpg");
+      }
+
+      #gwaeron {
+        background-image: url("images/gwaeron_2.jpg");
+      }
+
+      #gavle {
+        background-image: url("images/gavle_2.jpg");
+      }
+
+      #rkl {
+        background-image: url("images/rkl_2.jpg");
+      }
+
       #jaffar .tab {
         border-bottom-color: #2e8ad3;
       }
@@ -140,6 +174,34 @@
 
       #semla .tab {
         border-bottom-color: #ffffff;
+      }
+
+      #yappari .tab {
+        border-bottom-color: #75f94c;
+      }
+
+      #rassel .tab {
+        border-bottom-color: #9d69e3;
+      }
+
+      #bg .tab {
+        border-bottom-color: #265ff6;
+      }
+
+      #gwaeron .tab {
+        border-bottom-color: #95d3fb;
+      }
+
+      #gavle .tab {
+        border-bottom-color: #c88649;
+      }
+
+      #rkl .tab {
+        border-bottom-color: #80635d;
+      }
+
+      .text-white {
+        color: white;
       }
 
       .odd {
@@ -177,11 +239,49 @@
             ondragover="onDragOver(event);"
             ondrop="onDrop(event);"
           ></div>
+
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
           <div
             class="node odd"
             ondragover="onDragOver(event);"
             ondrop="onDrop(event);"
           ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+
           <div
             class="node even"
             ondragover="onDragOver(event);"
@@ -210,14 +310,62 @@
         ondrop="onDrop(event);"
       >
         <div
+          id="title"
+          class="draggable"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 24px;
+            box-sizing: border-box;
+            background-color: white;
+          "
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div
+            style="
+              color: purple;
+              font-size: 2rem;
+              display: flex;
+              justify-content: center;
+            "
+          >
+            #swebrawl
+          </div>
+          <div style="color: purple; font-size: 1.5rem">fettisdag</div>
+          <div
+            style="
+              color: purple;
+              font-size: 1.5rem;
+              display: flex;
+              justify-content: center;
+            "
+          >
+            1:a mars
+          </div>
+          <div
+            style="
+              color: purple;
+              font-size: 1.5rem;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            2022
+          </div>
+        </div>
+        <div
           id="jaffar"
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Om nom nom nom nom"
         >
           <div class="tab-title">
             <div class="tab"></div>
-            <div class="title">Jaffar</div>
+            <div class="title text-white">Jaffar</div>
           </div>
         </div>
         <div
@@ -225,6 +373,7 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Artsy-kvoten"
         >
           <div class="tab-title">
             <div class="tab"></div>
@@ -236,6 +385,7 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="En riktig godbit, samt en semla"
         >
           <div class="tab-title">
             <div class="tab"></div>
@@ -247,10 +397,11 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Den där Plurre"
         >
           <div class="tab-title">
             <div class="tab"></div>
-            <div class="title">Plurre</div>
+            <div class="title">Robin K.</div>
           </div>
         </div>
         <div
@@ -258,6 +409,7 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Världsmästare i multitaska bild under möte"
         >
           <div class="tab-title">
             <div class="tab"></div>
@@ -269,6 +421,7 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Min kollega tog den här bilden helt oprovocerat"
         >
           <div class="tab-title">
             <div class="tab"></div>
@@ -281,10 +434,11 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="En s.k. klassisk hanoi"
         >
           <div class="tab-title">
             <div class="tab"></div>
-            <div class="title">hanoi</div>
+            <div class="title text-white">hanoi</div>
           </div>
         </div>
         <div
@@ -292,10 +446,11 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Lakrits"
         >
           <div class="tab-title">
             <div class="tab"></div>
-            <div class="title">lopingg</div>
+            <div class="title text-white">Robin G.</div>
           </div>
         </div>
         <div
@@ -303,10 +458,84 @@
           class="draggable"
           draggable="true"
           ondragstart="onDragStart(event);"
+          title="Munnen är en banan"
         >
           <div class="tab-title">
             <div class="tab"></div>
             <div class="title">Semla</div>
+          </div>
+        </div>
+        <div
+          id="yappari"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          title="... cozy"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Yappari</div>
+          </div>
+        </div>
+        <div
+          id="rassel"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          title="Grädden i semlan symboliserar vit makt"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title text-white">rassel</div>
+          </div>
+        </div>
+
+        <div
+          id="bg"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          title="Tavlan i bakgrunden föreställer en berggren"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title text-white">pixlarn</div>
+          </div>
+        </div>
+        <div
+          id="gwaeron"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          title="Semla med Gwaeron-fyllning"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Robin L.</div>
+          </div>
+        </div>
+        <div
+          id="gavle"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          title=", London, Paris"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Gävle</div>
+          </div>
+        </div>
+        <div
+          id="rkl"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          title="kawaii_desu_shounen_89"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title text-white">vrklgn</div>
           </div>
         </div>
       </div>
@@ -315,7 +544,7 @@
   <script>
     function checkFinished() {
       const placed = document.querySelectorAll(".grid .draggable");
-      if (placed.length === 9) {
+      if (placed.length === 16) {
         const grid = document.querySelector(".grid");
         setTimeout(() => grid.classList.add("done"), 500);
       }
@@ -332,7 +561,6 @@
     function onDrop(event) {
       const id = event.dataTransfer.getData("text");
       const draggableElement = document.getElementById(id);
-      console.log(id);
       const dropzone = event.target;
       dropzone.appendChild(draggableElement);
       event.dataTransfer.clearData();
