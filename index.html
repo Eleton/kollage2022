@@ -1,0 +1,351 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>#swebrawl DIY DnD CLG MKR</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      img {
+        opacity: 1;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-wrap: wrap;
+      }
+
+      .gap {
+        gap: 10px;
+      }
+
+      .grid {
+        display: inline-grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .node {
+        width: 100%;
+        height: 100%;
+      }
+
+      .draggable {
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .tab-title {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0;
+      }
+      .title {
+        position: absolute;
+        top: calc(100% - 30px);
+        left: 14px;
+        transform: rotate(-45deg);
+      }
+      .tab {
+        width: 0;
+        height: 0;
+        border-bottom: 60px solid transparent;
+        border-left: 60px solid transparent;
+      }
+      .done .tab-title {
+        transition: opacity 2s;
+        opacity: 1;
+      }
+
+      #jaffar {
+        background-image: url("images/jaffar_2.jpg");
+      }
+
+      #merran {
+        background-image: url("images/merran_2.jpg");
+      }
+
+      #godis {
+        background-image: url("images/godis_2.jpg");
+      }
+
+      #plurre {
+        background-image: url("images/plurre_2.jpg");
+      }
+
+      #zaken {
+        background-image: url("images/zaken_2.jpg");
+      }
+
+      #eleton {
+        background-image: url("images/eleton_2.jpg");
+      }
+
+      #hanoi {
+        background-image: url("images/hanoi_2.jpg");
+      }
+
+      #lopingg {
+        background-image: url("images/lopingg_2.jpg");
+      }
+
+      #semla {
+        background-image: url("images/semla_2.jpg");
+      }
+
+      #jaffar .tab {
+        border-bottom-color: #2e8ad3;
+      }
+
+      #merran .tab {
+        border-bottom-color: #f887bb;
+      }
+
+      #godis .tab {
+        border-bottom-color: #abff2a;
+      }
+
+      #plurre .tab {
+        border-bottom-color: #eec028;
+      }
+
+      #zaken .tab {
+        border-bottom-color: #aacdc0;
+      }
+
+      #eleton .tab {
+        border-bottom-color: #ff5e5e;
+      }
+
+      #hanoi .tab {
+        border-bottom-color: #6b74d2;
+      }
+
+      #lopingg .tab {
+        border-bottom-color: #1d5988;
+      }
+
+      #semla .tab {
+        border-bottom-color: #ffffff;
+      }
+
+      .odd {
+        background-color: #22222222;
+      }
+      .even {
+        background-color: #ffffee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>#swebrawl DIY DnD CLG MKR</h1>
+    </div>
+    <div class="container">
+      <div class="center">
+        <div class="grid">
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node even"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+          <div
+            class="node odd"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="center gap"
+        ondragover="onDragOver(event);"
+        ondrop="onDrop(event);"
+      >
+        <div
+          id="jaffar"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Jaffar</div>
+          </div>
+        </div>
+        <div
+          id="merran"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">merran</div>
+          </div>
+        </div>
+        <div
+          id="godis"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Godis</div>
+          </div>
+        </div>
+        <div
+          id="plurre"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Plurre</div>
+          </div>
+        </div>
+        <div
+          id="zaken"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">zaken</div>
+          </div>
+        </div>
+        <div
+          id="eleton"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Eleton</div>
+          </div>
+        </div>
+
+        <div
+          id="hanoi"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">hanoi</div>
+          </div>
+        </div>
+        <div
+          id="lopingg"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">lopingg</div>
+          </div>
+        </div>
+        <div
+          id="semla"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+        >
+          <div class="tab-title">
+            <div class="tab"></div>
+            <div class="title">Semla</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function checkFinished() {
+      const placed = document.querySelectorAll(".grid .draggable");
+      if (placed.length === 9) {
+        const grid = document.querySelector(".grid");
+        setTimeout(() => grid.classList.add("done"), 500);
+      }
+    }
+
+    function onDragStart(event) {
+      event.dataTransfer.setData("text/plain", event.target.id);
+    }
+
+    function onDragOver(event) {
+      event.preventDefault();
+    }
+
+    function onDrop(event) {
+      const id = event.dataTransfer.getData("text");
+      const draggableElement = document.getElementById(id);
+      console.log(id);
+      const dropzone = event.target;
+      dropzone.appendChild(draggableElement);
+      event.dataTransfer.clearData();
+      checkFinished();
+    }
+
+    const colors = {
+      jaffar: "#2e8ad3",
+      merran: "#f887bb",
+      godis: "#abff2a",
+      plurre: "#eec028",
+      zaken: "#aacdc0",
+      eleton: "#ff5e5e",
+    };
+  </script>
+</html>
